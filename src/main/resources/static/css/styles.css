@@ -1,0 +1,109 @@
+body {
+  text-transform: uppercase;
+  background-color: linen;
+}
+
+.top-logo {
+  width: 30%;
+  height: 15%;
+  margin-top: -4%;
+}
+
+
+
+#sectionNew {
+  background-image: url("/img/jungle3.jpg");
+  background-color: rgba(90, 90, 90, 0.603);
+  background-position: center;
+  background-size: cover;
+  height: 158vh;
+}
+
+
+
+
+#sectionDashboard {
+  background-image: url("/img/0144_Banner-145.jpg");
+  background-color: rgba(90, 90, 90, 0.603);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  height: 35vh;
+}
+
+
+#section {
+  background-image: url("/img/wp3948212.jpg");
+  background-color: rgba(90, 90, 90, 0.603);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+#sectionSpecies {
+  background-image: url("/img/snake2.jpg");
+  background-color: rgba(90, 90, 90, 0.603);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+#sectionCare {
+  background-image: url("/img/snake4.png");
+  background-color: rgba(90, 90, 90, 0.603);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+#sectionSales {
+  background-image: url("/img/snake3.jpg");
+  background-color: rgba(90, 90, 90, 0.603);
+  background-position: center;
+  background-size: cover;
+  height: 170vh;
+}
+#sectionContact {
+  background-image: url("/img/snake6.jpg");
+  background-color: rgba(90, 90, 90, 0.603);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+nav a2 {
+  white-space: nowrap;
+  color: rgba(233, 232, 232, 0.842) !important;
+}
+
+nav a {
+  white-space: nowrap;
+  color: rgba(233, 232, 232, 0.842) !important;
+}
+
+nav a:hover,
+.active {
+  color: rgb(255, 255, 255) !important;
+  text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.book {
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.navbar-nav > li > .dropdown-menu,
+.navbar-nav > li > .dropdown-menu a {
+  background-color: #8a88886c;
+}
+
+.middle-section {
+  border: 1px solid #a7a5a5;
+  border-radius: 10px;
+  box-shadow: rgb(146, 145, 145) 1px 0 5px;
+  background-color: #131313a1;
+}
+
+#darkLink {
+	color: black;
+}

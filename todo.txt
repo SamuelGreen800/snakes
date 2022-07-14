@@ -1,0 +1,13 @@
+Todos:
+
+
+	<!-- DONE. fit header images for full image. Currently zooming the image. -->
+	resize logo image?
+	
+	
+	
+	
+	
+	File Upload
+	Contact Form
+	Favicons
