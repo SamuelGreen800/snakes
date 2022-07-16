@@ -28,7 +28,7 @@ public class Snake {
 	@NotEmpty
 	@Size(min = 2, max = 128, message = "Name must be between 2 and 128 characters")
 	private String name;
-
+	
 	@NotEmpty
 	@Size(min = 2, max = 128, message = "Species must be between 2 and 128 characters")
 	private String species;
@@ -41,6 +41,11 @@ public class Snake {
 	@Size(min = 1, max = 10, message = "Sex must be between 1 and 10 characters")
 	private String sex;
 
+	
+	@NotEmpty
+	@Size(min = 1, max = 128, message = "Price must be between 1 and 1000 characters")
+	private String price;
+	
 	@NotEmpty
 	@Size(min = 1, max = 1000, message = "Description must be between 1 and 1000 characters")
 	private String description;
@@ -58,15 +63,17 @@ public class Snake {
 	public Snake() {
 	}
 
-	public Snake(String name, String species, String birthdate, String sex, String description, String photos) {
+	public Snake(String name, String species, String birthdate, String sex, String price, String description, String photos) {
 		this.name = name;
 		this.species = species;
 		this.birthdate = birthdate;
 		this.sex = sex;
+		this.price = price;
 		this.description = description;
 		this.photos = photos;
 
 	}
+
 
 	@PrePersist
 	protected void onCreate() {
@@ -78,6 +85,8 @@ public class Snake {
 		this.updatedAt = new Date();
 	}
 
+	
+	//================================================ Set and Get ==============================================
 	public Long getId() {
 		return id;
 	}
@@ -96,6 +105,13 @@ public class Snake {
 
 	public String getSpecies() {
 		return species;
+	}
+	public String getPrice() {
+		return price;
+	}
+	
+	public void setPrice(String price) {
+		this.price = price;
 	}
 
 	public void setSpecies(String species) {

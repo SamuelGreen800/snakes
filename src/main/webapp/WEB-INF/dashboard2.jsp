@@ -13,48 +13,21 @@
 <meta name="description" content="" />
 <meta name="author" content="" />
 <title>Gilboa.com</title>
-<!-- Favicon-->
-<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-<!-- Font Awesome icons (free version)-->
-<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
-	crossorigin="anonymous"></script>
-<!-- Google fonts-->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-	rel="stylesheet" type="text/css" />
-<link
-	href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
-	rel="stylesheet" type="text/css" />
-<!-- Core theme CSS (includes Bootstrap)-->
-<link href="/css/styles.css" rel="stylesheet" />
-</head>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" defer></script>
 <!-- FONT-AWESOME -->
 <link rel="stylesheet"
-	href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-	integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-	crossorigin="anonymous" />
-
+	href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 <!-- BOOTSTRAP -->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-	crossorigin="anonymous" />
+	rel="stylesheet"/>
 <script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-	crossorigin="anonymous"></script>
-
-<!-- CSS -->
+defer></script>
 <link rel="stylesheet" href="/css/styles.css" />
 
-<title>Gilboa.com - Home</title>
 </head>
 <body class="">
 	<section id="sectionDashboard">
@@ -148,6 +121,29 @@
 	</div>
 
 	<div class="text-center m-5">
+	</div>
+	
+	<div class="footer-basic">
+		<footer>
+			<div class="social">
+				<a href="http://www.instagram.com"><i
+					class="fa-brands fa-instagram-square"></i></a><a
+					href="http://www.snapchat.com"><i
+					class="fa-brands fa-snapchat-square"></i></a><a
+					href="http://www.twitter.com"><i
+					class="fa-brands fa-twitter-square"></i></a><a
+					href="http://www.facebook.com"><i
+					class="fa-brands fa-facebook-square"></i></a>
+			</div>
+			<ul class="list-inline">
+				<li class="list-inline-item"><a href="/">Home</a></li>
+				<li class="list-inline-item"><a href="/species">Species</a></li>
+				<li class="list-inline-item"><a href="/care">Care</a></li>
+				<li class="list-inline-item"><a href="/sales">Sales</a></li>
+				<li class="list-inline-item"><a href="/contact">Contact</a></li>
+			</ul>
+			<p class="copyright">Gilboa.com © 2021</p>
+		</footer>
 	</div>
 </body>
 </html>

@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ page isErrorPage="true"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,48 +13,21 @@
 <meta name="description" content="" />
 <meta name="author" content="" />
 <title>Gilboa.com - Contact</title>
-<!-- Favicon-->
-<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-<!-- Font Awesome icons (free version)-->
-<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
-	crossorigin="anonymous"></script>
-<!-- Google fonts-->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-	rel="stylesheet" type="text/css" />
-<link
-	href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
-	rel="stylesheet" type="text/css" />
-<!-- Core theme CSS (includes Bootstrap)-->
-<link href="/css/styles.css" rel="stylesheet" />
-</head>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" defer></script>
 <!-- FONT-AWESOME -->
 <link rel="stylesheet"
-	href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-	integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-	crossorigin="anonymous" />
-
+	href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 <!-- BOOTSTRAP -->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-	crossorigin="anonymous" />
+	rel="stylesheet"/>
 <script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-	crossorigin="anonymous"></script>
-
-<!-- CSS -->
+defer></script>
 <link rel="stylesheet" href="/css/styles.css" />
 
-<title>Gilboa.com - Contact</title>
 </head>
 <body class="text-center">
 	<section id="sectionContact">
@@ -100,7 +77,7 @@
 
 
 	</section>
-	<div class="content">
+	<div class="content container">
 		<h1>This is sssssssome content</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 			eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ut
@@ -167,6 +144,64 @@
 			dictum non consectetur a erat. A scelerisque purus semper eget.
 			Semper risus in hendrerit gravida rutrum quisque non tellus orci.
 			Sapien faucibus et molestie ac feugiat sed lectus vestibulum.</p>
+	</div>
+
+
+<div class="container mx-auto col-5">
+<form:form action="/contact/email" method="post" class="m-2 form opacity-75 form-control p-4" enctype="multipart/form-data" modelAttribute="mail">
+						<h1 class="text-center">Contact Us</h1>
+							<div class="form-group  fw-bold d-flex justify-content-between my-5">
+				            	<form:label path="name">Your Name:</form:label>
+				            	<form:errors path="name" class="text-danger"/>
+								<form:input class="input col-9" path="name"/>
+				            </div>
+				            
+				       		<div class="form-group d-flex fw-bold justify-content-between my-5">
+				       			<form:label path="email">Your Email:</form:label>
+				            	<form:errors path="email" class="text-danger"/>
+								<form:input class="input col-9" path="email"/>
+				           </div>
+				           
+				           <div class="form-group d-flex fw-bold justify-content-between my-5">
+				       			<form:label path="subject">Subject:</form:label>
+				            	<form:errors path="subject" class="text-danger"/>
+								<form:input class="input col-9" path="subject"/>
+				           </div>
+				           
+				           <div class="form-group d-flex fw-bold justify-content-between my-5">
+				       			<form:label path="message">Message:</form:label>
+				            	<form:errors path="message" class="text-danger"/>
+								<form:textarea class="input col-9" rows="9" path="message"/>
+				           </div>
+
+				        	<div class="form-group d-flex fw-bold justify-content-center">
+				        		<input class="btn btn-success" type="submit" value="Submit"/>
+				       		</div>
+			
+			</form:form>
+				    </div>
+				    
+				    <div class="footer-basic">
+		<footer>
+			<div class="social">
+				<a href="http://www.instagram.com"><i
+					class="fa-brands fa-instagram-square"></i></a><a
+					href="http://www.snapchat.com"><i
+					class="fa-brands fa-snapchat-square"></i></a><a
+					href="http://www.twitter.com"><i
+					class="fa-brands fa-twitter-square"></i></a><a
+					href="http://www.facebook.com"><i
+					class="fa-brands fa-facebook-square"></i></a>
+			</div>
+			<ul class="list-inline">
+				<li class="list-inline-item"><a href="/">Home</a></li>
+				<li class="list-inline-item"><a href="/species">Species</a></li>
+				<li class="list-inline-item"><a href="/care">Care</a></li>
+				<li class="list-inline-item"><a href="/sales">Sales</a></li>
+				<li class="list-inline-item"><a href="/contact">Contact</a></li>
+			</ul>
+			<p class="copyright">Gilboa.com © 2021</p>
+		</footer>
 	</div>
 
 </body>

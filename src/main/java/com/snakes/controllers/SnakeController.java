@@ -58,10 +58,7 @@ public class SnakeController {
 		return "species.jsp";
 	}
 	
-	@GetMapping("/contact")
-	public String contact() {
-		return "contactUs.jsp";
-	}
+	
 	
 	@GetMapping("/care")
 	public String care() {
@@ -101,7 +98,7 @@ public class SnakeController {
 	
 	
 	@PostMapping("/admin/new")
-	public String addNewSnake(@Valid @ModelAttribute("snake") Snake newSnake, BindingResult result, HttpSession session, @RequestParam("photos") MultipartFile multipartFile) throws IOException
+	public String addNewSnake(@Valid @ModelAttribute("snake") Snake newSnake, BindingResult result, HttpSession session, @RequestParam("image") MultipartFile multipartFile) throws IOException
 	{
 		
 		if(session.getAttribute("userId") == null) {
@@ -113,13 +110,13 @@ public class SnakeController {
 		}
 		
 		else {
+			snakeService.addSnake(newSnake);
 			String fileName = StringUtils.cleanPath(multipartFile.getOriginalFilename());
-			String uploadDir = "user-photos/" + newSnake.getId();
-			System.out.println(fileName);
-			System.out.println(uploadDir);
+			String uploadDir = "snake-photos/" + newSnake.getId();
+	
 			
 			newSnake.setPhotos(fileName);
-			snakeService.addSnake(newSnake);
+			snakeService.updateSnake(newSnake);
 			
 			FileUploadUtil.saveFile(uploadDir, fileName, multipartFile);
 			
@@ -129,25 +126,7 @@ public class SnakeController {
 	}
 	
 	
-	
-	
-	
-//	@PostMapping("/admin/new")
-//	public String addNewSnake(@Valid @ModelAttribute("snake") Snake snake, BindingResult result, HttpSession session) {
-//		
-//		if(session.getAttribute("userId") == null) {
-//			return "redirect:/logout";
-//		}
-//		
-//		if(result.hasErrors()) {
-//			return "newSnake.jsp";
-//		}else {
-//			Snake newSnake = new Snake(snake.getName(), snake.getSpecies(), snake.getBirthdate(), snake.getSex(), snake.getDescription());
-//			snakeService.addSnake(newSnake);
-//			return "redirect:/admin";
-//		}
-//	}
-	
+
 
 	
 	@RequestMapping("/admin/delete/{id}")
@@ -179,19 +158,12 @@ public class SnakeController {
 		return "editSnake.jsp";
 	}
 	
-	@GetMapping("/admin/view/{id}")
-	public String viewSnake(@PathVariable("id") Long id, HttpSession session, Model model, @ModelAttribute("snake") Snake snake ) {
-		if(session.getAttribute("userId") == null) {
-			return "redirect:/logout";
-		}
-		Snake oneSnake = snakeService.findById(id);
-		model.addAttribute("oneSnake", oneSnake);
-		return "viewOneSnake.jsp";
-	}
+	
+	
 	
 	
 	@PostMapping("/admin/img/{id}")
-    public String saveUser(@PathVariable("id") Long id, Snake oneSnake,
+    public String saveSnakePic(@PathVariable("id") Long id, Snake oneSnake,
             @RequestParam("image") MultipartFile multipartFile) throws IOException {
          
         String fileName = StringUtils.cleanPath(multipartFile.getOriginalFilename());
@@ -203,10 +175,19 @@ public class SnakeController {
  
         FileUploadUtil.saveFile(uploadDir, fileName, multipartFile);
          
-        return "redirect:/admin";
+        return "redirect:/admin/view/{id}";
     }
 
 	
+	@GetMapping("/admin/view/{id}")
+	public String viewSnake(@PathVariable("id") Long id, HttpSession session, Model model, @ModelAttribute("snake") Snake snake ) {
+		if(session.getAttribute("userId") == null) {
+			return "redirect:/logout";
+		}
+		Snake oneSnake = snakeService.findById(id);
+		model.addAttribute("oneSnake", oneSnake);
+		return "viewOneSnake.jsp";
+	}
 	
 	
 	
@@ -216,45 +197,26 @@ public class SnakeController {
 			@PathVariable("id") Long id, 
 			@Valid @ModelAttribute("snake") Snake snake, 
 			BindingResult result, 
-			HttpSession session) {
+			HttpSession session, @RequestParam("image") MultipartFile
+			  multipartFile) throws IOException {
 		
 		if(session.getAttribute("userId") == null) {
 			return "redirect:/logout";
 		}
 		
+		
 		if(result.hasErrors()) {
 			return "editSnake.jsp";
 		}else {
+			String fileName = StringUtils.cleanPath(multipartFile.getOriginalFilename());
+			String uploadDir = "snake-photos/" + snake.getId();
+	
 			
+			snake.setPhotos(fileName);
 			snakeService.updateSnake(snake);
+			
+			FileUploadUtil.saveFile(uploadDir, fileName, multipartFile);
 			return "redirect:/admin";
 		}
-		}
-	
-
-//	@RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
-//	public String submit(@RequestParam("pics") MultipartFile pics, ModelMap modelMap, @Valid @ModelAttribute("snake") Snake snake, BindingResult result, HttpSession session) {
-//		
-//		if(session.getAttribute("userId") == null) {
-//			return "redirect:/logout";
-//		}
-//		if(result.hasErrors()) {
-//			return "viewOneSnake.jsp";
-//		}
-//		
-//		modelMap.addAttribute("pics", pics);
-//		snakeService.updateSnake(snake);
-//		
-//		return "redirect:/admin";
-//                                     
-//	}
-
-
-
+	}
 }
-
-
-
-
-
-
