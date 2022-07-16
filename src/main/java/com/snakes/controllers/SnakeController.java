@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.snakes.models.MailModel;
 import com.snakes.models.Snake;
 import com.snakes.repositories.SnakeRepository;
 import com.snakes.services.SnakeService;
@@ -47,7 +48,7 @@ public class SnakeController {
 
 
 	@GetMapping("/sales")
-	public String sales(@ModelAttribute("snake") Snake snake, HttpSession session, Model model) {
+	public String sales(@ModelAttribute("snake") Snake snake, @ModelAttribute("mail") MailModel mail, Model model) {
 		model.addAttribute("snakes", snakeService.allSnakes());
 		
 		return "forSale.jsp";

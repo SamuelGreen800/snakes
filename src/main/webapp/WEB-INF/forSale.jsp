@@ -127,6 +127,41 @@
 			</div>
 		</div>
 	</c:forEach>
+	
+	<div class="container mx-auto col-5">
+<form:form action="/contact/email" method="post" class="m-2 form opacity-75 form-control p-4" enctype="multipart/form-data" modelAttribute="mail">
+						<h1 class="text-center">Contact Us</h1>
+							<div class="form-group  fw-bold d-flex justify-content-between my-5">
+				            	<form:label path="name">Your Name:</form:label>
+				            	<form:errors path="name" class="text-danger"/>
+								<form:input class="input col-9" path="name"/>
+				            </div>
+				            
+				       		<div class="form-group d-flex fw-bold justify-content-between my-5">
+				       			<form:label path="email">Your Email:</form:label>
+				            	<form:errors path="email" class="text-danger"/>
+								<form:input class="input col-9" path="email"/>
+				           </div>
+				           
+				           <div class="form-group d-flex fw-bold justify-content-between my-5">
+				       			<form:label path="subject">Subject:</form:label>
+				            	<form:errors path="subject" class="text-danger"/>
+								<form:input class="input col-9" path="subject"/>
+				           </div>
+				           
+				           <div class="form-group d-flex fw-bold justify-content-between my-5">
+				       			<form:label path="message">Message:</form:label>
+				            	<form:errors path="message" class="text-danger"/>
+								<form:textarea class="input col-9" rows="9" path="message"/>
+				           </div>
+
+				        	<div class="form-group d-flex fw-bold justify-content-center">
+				        		<input class="btn btn-success" type="submit" value="Submit"/>
+				       		</div>
+			
+			</form:form>
+				    </div>
+	
 
 
 	<div class="footer-basic">

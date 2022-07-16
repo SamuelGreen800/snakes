@@ -65,7 +65,7 @@ public class MailController extends MailService {
 
             MailService.sendEmail(session, mail.getEmail(), mail.getName(), mail.getSubject(), mail.getMessage());
 
-            return"redirect:/sales" ;
+            return"emailConfirm.jsp" ;
             }
 
     }

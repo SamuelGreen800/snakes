@@ -78,72 +78,12 @@ defer></script>
 
 	</section>
 	<div class="content container">
-		<h1>This is sssssssome content</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-			eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ut
-			tellus elementum sagittis vitae et leo duis. Felis bibendum ut
-			tristique et egestas. Faucibus pulvinar elementum integer enim neque.
-			Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum.
-			Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae. Netus
-			et malesuada fames ac turpis egestas sed. Rutrum quisque non tellus
-			orci. Eget nunc scelerisque viverra mauris in. In est ante in nibh
-			mauris cursus. Ac feugiat sed lectus vestibulum mattis. Nulla at
-			volutpat diam ut venenatis tellus. Blandit libero volutpat sed cras.
-			Praesent elementum facilisis leo vel. Ullamcorper sit amet risus
-			nullam. Et netus et malesuada fames ac turpis egestas. Gravida in
-			fermentum et sollicitudin. Cras tincidunt lobortis feugiat vivamus at
-			augue eget. Cras sed felis eget velit aliquet sagittis id. Pharetra
-			diam sit amet nisl suscipit adipiscing bibendum est. Feugiat sed
-			lectus vestibulum mattis ullamcorper. Curabitur vitae nunc sed velit
-			dignissim sodales. In iaculis nunc sed augue. Nibh praesent tristique
-			magna sit amet purus. In est ante in nibh mauris cursus mattis
-			molestie. Adipiscing elit duis tristique sollicitudin nibh sit.
-			Ornare arcu odio ut sem nulla. Quam vulputate dignissim suspendisse
-			in. Etiam tempor orci eu lobortis elementum nibh tellus. Orci
-			sagittis eu volutpat odio facilisis mauris sit amet. Lacinia at quis
-			risus sed vulputate. Malesuada fames ac turpis egestas sed tempus. Eu
-			lobortis elementum nibh tellus molestie. Cursus eget nunc scelerisque
-			viverra mauris in. Arcu dui vivamus arcu felis bibendum. Suspendisse
-			in est ante in nibh mauris cursus. Semper auctor neque vitae tempus
-			quam pellentesque nec nam aliquam. Neque vitae tempus quam
-			pellentesque nec. Urna cursus eget nunc scelerisque viverra. Nulla
-			porttitor massa id neque aliquam vestibulum. Fringilla phasellus
-			faucibus scelerisque eleifend donec pretium vulputate sapien nec. Ac
-			turpis egestas integer eget aliquet nibh praesent. Adipiscing at in
-			tellus integer feugiat scelerisque varius. Non arcu risus quis varius
-			quam quisque id diam vel. Hendrerit gravida rutrum quisque non tellus
-			orci ac auctor. Urna molestie at elementum eu facilisis sed odio
-			morbi quis. Ultrices in iaculis nunc sed augue lacus viverra vitae.
-			Sit amet facilisis magna etiam. Dictum non consectetur a erat. Morbi
-			leo urna molestie at elementum eu facilisis sed odio. Nulla facilisi
-			nullam vehicula ipsum a. Turpis in eu mi bibendum neque egestas
-			congue quisque egestas. Augue mauris augue neque gravida in
-			fermentum. Feugiat nisl pretium fusce id. Pharetra sit amet aliquam
-			id diam. Etiam dignissim diam quis enim lobortis scelerisque
-			fermentum. Mauris pharetra et ultrices neque ornare aenean euismod
-			elementum. Tellus integer feugiat scelerisque varius morbi enim nunc
-			faucibus a. Pharetra pharetra massa massa ultricies mi quis
-			hendrerit. Et netus et malesuada fames. Ultricies integer quis auctor
-			elit. Nisl pretium fusce id velit ut tortor pretium. Ut pharetra sit
-			amet aliquam id. Cras ornare arcu dui vivamus arcu felis bibendum ut.
-			
-			
-			
-
-			Nibh cras pulvinar mattis nunc. Sagittis id consectetur purus ut
-			faucibus pulvinar. In hendrerit gravida rutrum quisque non tellus.
-			Vel eros donec ac odio tempor orci dapibus ultrices. Gravida neque
-			convallis a cras. Justo laoreet sit amet cursus sit amet dictum.
-			Magna eget est lorem ipsum dolor sit amet. Et malesuada fames ac
-			turpis egestas sed. Malesuada bibendum arcu vitae elementum curabitur
-			vitae nunc. Lectus magna fringilla urna porttitor rhoncus dolor purus
-			non. Amet nulla facilisi morbi tempus iaculis urna. At in tellus
-			integer feugiat scelerisque varius. Cras ornare arcu dui vivamus arcu
-			felis. Faucibus in ornare quam viverra orci sagittis eu volutpat
-			odio. Vel turpis nunc eget lorem dolor sed. Velit scelerisque in
-			dictum non consectetur a erat. A scelerisque purus semper eget.
-			Semper risus in hendrerit gravida rutrum quisque non tellus orci.
-			Sapien faucibus et molestie ac feugiat sed lectus vestibulum.</p>
+		<h1>Contact us:</h1>
+		<p>We welcome all questions, comments, or suggestions!</p>
+		<p>We are located in Sunny St Petersburg FL, and will happily supply an address for pickup via email.</p>
+		<p><span class="fw-bold">Phone:</span> 1-727-not-done</p>
+		<p><span class="fw-bold">Email:</span> ToothyNoodle@gilboa.com</p>
+		<p>Or, just email us directly through the contact form below!</p
 	</div>
 
 

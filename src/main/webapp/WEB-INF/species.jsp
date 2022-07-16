@@ -73,9 +73,28 @@ defer></script>
 
 
 	</section>
-	<div class="content">
+	<div class="container content">
 		<h1>This is the speciesss page</h1>
 		<p>Here, you'll learn the differences between boas and pythons!</p>
+		
+		<img class="my-3" src="/img/maxresdefault.jpg" style="width: 50rem;" name="vs" alt="Python vs Boa picture">
+		<div><label class="mb-5" for="vs">It's mostly in the teeth</label></div>
+		
+		<p>And hemisphere! Most Boas live in the western hemisphere, in central and South America. A certain few live in Africa and surrounding islands (Madagascar).</p>
+		<p>Most species of boas are ovoviviparous snakes, meaning they are born as live hatchlings from eggs incubated inside their mother.</p>
+		<p>Tree boas also have enormous fangs, as compared to Pythons</p>
+		
+		<img class="my-3" src="/img/young-emerald-tree-boa.jpg" style="width: 50rem;" name="boa1" alt="Boa1 picture">
+		<div><label class="mb-5" for="boa1">A young emerald tree boa ready for the dentitst</label></div>
+		
+		<p>Pythons on the other hand, are an old world snake, ranging all over Africa, SouthEast Asia, and Australia</p>
+		<p>Most python species heat-sensing pits along the lips, these specialized organs enable them to detect tiny differences in temperature, allowing these snakes to hunt down warm-blooded prey, such as mammals and birds.</p>
+		<p>The pythons are oviparous snakes, meaning they lay eggs. The female after laying the eggs, incubates them to keep them warm.</p>
+		
+		<img class="my-3" src="/img/pythonpython.jpg" style="width: 50rem;" name="python1" alt="Python1 picture">
+		<div><label class="mb-5" for="python1">These are the dynamically typed variety </label></div>
+		
+		<p>And more to come!</p>
 	</div>
 
 
