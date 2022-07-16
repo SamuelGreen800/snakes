@@ -151,37 +151,22 @@
 
 </body>
 </html>
+<h1>Snakes for Sale:</h1>
 
-
-
-
-	<div>
-	<h1>Snakes for sale:</h1>
-	<c:forEach var="eachSnake" items="${snakes}">
-		<div class="card border border-dark mx-auto my-4 col-4">
-		<div class="d-flex justify-content-around">
-		<p>Name: <c:out value="${eachSnake.name }"/> </p>
-		<p>Sex: <c:out value="${eachSnake.sex }"/> </p>
-		</div>
+<c:forEach var="eachSnake" items="${snakes}"></h1>
+<div class="card mx-auto" style="width: 30rem;">
+  <img class="card-img-top" src='<c:out value="${eachSnake.photosImagePath}"/>' >
+  <div class="card-body">
+    <h5 class="card-title"><c:out value="${eachSnake.name }"/></h5>
+    <p>Sex: <c:out value="${eachSnake.sex }"/> </p>
 		<p>Species: <c:out value="${eachSnake.species }"/> </p>
 		<p>Birthdate: <c:out value="${eachSnake.birthdate }"/> </p>
 		<p>Description: <c:out value="${eachSnake.description }"/> </p>
-		</div>
-	</c:forEach>
-	</div>
+  </div>
+</div>
+</c:forEach>
+
+	
 </body>
 </html>
 
-
-<%-- <c:forEach var="eachSnake" items="${snakes}">
-			
-				<tr>
-					<td><a href="/admin/${eachSnake.id}" class="text-dark"><c:out value="${eachSnake.name}"/></a></td>
-					<td><c:out value="${eachSnake.species}"/></td>
-					<td><c:out value="${eachSnake.birthdate}"/></td>
-					<td><c:out value="${eachSnake.description }"/></td>
-					
-				
-				</tr>
-			</c:forEach>
-		</table> --%>

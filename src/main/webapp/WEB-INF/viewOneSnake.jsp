@@ -86,9 +86,29 @@ body {
 					</div>
 				</div>
 				
-
+				<div class="d-flex col-5 my-2 justify-content-between">
+					<div class="fw-bold col-4">Photos</div>
+					<div class="col-7">
+						<c:out value="${oneSnake.photos}"></c:out>
+					</div>
+					
+					<img src='<c:out value="${oneSnake.photosImagePath}"></c:out>'>
+				</div>
+					
+					
 				
-			
+	<div class="m-3">
+				<form action="/admin/img/${oneSnake.id }" method="post" enctype="multipart/form-data">
+				<input type="file" name="image">
+				<input type="hidden" name="name" value="${ oneSnake.name}"/>
+				<input type="hidden" name="species" value="${ oneSnake.species}"/>
+				<input type="hidden" name="birthdate" value="${ oneSnake.birthdate}"/>
+				<input type="hidden" name="sex" value="${ oneSnake.sex}"/>
+				<input type="hidden" name="description" value="${ oneSnake.description}"/>
+				<input type="submit" value="upload"/>
+				
+				</form>
+		</div>	
 
 			<div class="d-flex m-4 justify-content-between">
 				<a class="btn btn-primary" href="/admin">Dashboard</a> <a

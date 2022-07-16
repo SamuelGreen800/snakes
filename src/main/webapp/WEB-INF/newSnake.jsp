@@ -19,9 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous" defer></script>
 <style>
-body {
-    background-image: url("/img/jungle3"); 
-}
+
 
 </style>
 
@@ -69,7 +67,14 @@ body {
 								<form:textarea rows="4"  class="input col-7" path="description"/>
 				           </div>
 				        	
+				        	<div class="form-group d-flex fw-bold justify-content-between my-5">
+				       			<form:label path="photos">Picture:</form:label>
+				            	<form:errors path="photos" class="text-danger"/>
+								<form:input type="file" class="input col-7" path="photos"/>
+				           </div>
 				        	
+				        	 
+				        	 <!-- <input type="file" name="photos"></input> -->
 				        	
 				        	
 				       
