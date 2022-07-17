@@ -8,6 +8,16 @@ Todos:
 	
 	
 	
-	File Upload
-	Contact Form
-	Favicons
+	File Upload:
+		Fix form
+		Ensure photo deletes n snake delete
+	
+	
+	
+	
+	Contact Form:
+		Set a limit on use
+	
+	
+	
+	
