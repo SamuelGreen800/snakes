@@ -1,16 +1,11 @@
 Todos:
 
 
-	<!-- DONE. fit header images for full image. Currently zooming the image. -->
-	resize logo image?
-	
-	
-	
 	
 	
 	File Upload:
-		Fix form
-		Ensure photo deletes n snake delete
+		Fix form. Display error message or allow when no file selected. Crashes site currently.
+		Ensure photos delete on snake delete
 	
 	
 	
