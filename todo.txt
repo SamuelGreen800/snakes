@@ -1,17 +1,30 @@
 Todos:
+	Create a prope readme with screenshots
 
+
+	Responsiveness:
+		Fix banner image resizing. Media query?
+		fix mobile menu icon
+		fix contact form
+			fix all admin forms. Probably kill the backgrounds too, they were just goofing around...
 
 	
 	
 	File Upload:
-		Fix form. Display error message or allow when no file selected. Crashes site currently.
-		Ensure photos delete on snake delete
+		Fix to save files in the ubuntu file directory
+		Fix to display files in ubuntu files directory.
+			Fix form properly, RE JSP form:form.. Display error message or allow when no file selected. Crashes site currently.
+		Have photos delete on snake delete
 	
 	
 	
 	
 	Contact Form:
-		Set a limit on use
+		Set a limit on use. 2 per day? Will need to tag user with session....?
+
+	
+	True deploy:
+		Figure out single login. Spring security?
 	
 	
 	
