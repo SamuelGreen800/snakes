@@ -10,8 +10,9 @@ import com.snakes.models.Snake;
 
 @Repository
 
-public interface SnakeRepository extends CrudRepository <Snake, Long> {
+public interface SnakeRepository extends CrudRepository<Snake, Long> {
 	List<Snake> findAll();
+
 	Optional<Snake> findById(Long id);
 
 }

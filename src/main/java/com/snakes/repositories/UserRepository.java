@@ -9,7 +9,7 @@ import com.snakes.models.User;
 
 @Repository
 public interface UserRepository extends CrudRepository<User, Long> {
- 
+
 	Optional<User> findByEmail(String email);
- 
+
 }

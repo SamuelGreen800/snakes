@@ -18,51 +18,48 @@ import javax.validation.constraints.Size;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
-@Table(name="users")
+@Table(name = "users")
 
 public class User {
-	
 
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    
-    @NotEmpty(message="Email is required!")
-    @Email(message="Please enter a valid email!")
-    private String email;
-    
-    @NotEmpty(message="Password is required!")
-    @Size(min=8, max=128, message="Password must be between 8 and 128 characters")
-    private String password;
-    
-    @Transient
-    @NotEmpty(message="Confirm Password is required!")
-    @Size(min=8, max=128, message="Password must be between 8 and 128 characters")
-    private String confirm;
-    
-    @Column(updatable=false)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+
+	@NotEmpty(message = "Email is required!")
+	@Email(message = "Please enter a valid email!")
+	private String email;
+
+	@NotEmpty(message = "Password is required!")
+	@Size(min = 8, max = 128, message = "Password must be between 8 and 128 characters")
+	private String password;
+
+	@Transient
+	@NotEmpty(message = "Confirm Password is required!")
+	@Size(min = 8, max = 128, message = "Password must be between 8 and 128 characters")
+	private String confirm;
+
+	@Column(updatable = false)
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date createdAt;
-    
 
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
-    private Date updatedAt;
-	
-    
-    @PrePersist
-	protected void onCreate(){
+	private Date updatedAt;
+
+	@PrePersist
+	protected void onCreate() {
 		this.createdAt = new Date();
 	}
-    
+
 	@PreUpdate
-	protected void onUpdate(){
+	protected void onUpdate() {
 		this.updatedAt = new Date();
 	}
-  
-    public User() {}
-    
-    
-    //------------------------------------------------------------------
+
+	public User() {
+	}
+
+	// ------------------------------------------------------------------
 
 	public Long getId() {
 		return id;
@@ -71,7 +68,6 @@ public class User {
 	public void setId(Long id) {
 		this.id = id;
 	}
-
 
 	public String getEmail() {
 		return email;
@@ -113,5 +109,3 @@ public class User {
 		this.updatedAt = updatedAt;
 	}
 }
-
-	

@@ -12,38 +12,35 @@ import com.snakes.repositories.SnakeRepository;
 @Service
 
 public class SnakeService {
-	
+
 	@Autowired
 	private SnakeRepository snakeRepo;
-	
+
 	public SnakeService(SnakeRepository snakeRepo) {
 		this.snakeRepo = snakeRepo;
 	}
-	
-	public List<Snake> allSnakes(){
+
+	public List<Snake> allSnakes() {
 		return snakeRepo.findAll();
 	}
-	
+
 	public Snake updateSnake(Snake snake) {
 		return snakeRepo.save(snake);
 	}
-	
+
 	public Snake addSnake(Snake snake) {
 		return snakeRepo.save(snake);
 	}
-	
+
 	public void deleteSnake(Snake snake) {
 		snakeRepo.delete(snake);
 	}
-	
-	
-	
+
 	public Snake findById(Long id) {
 		Optional<Snake> optionalSnake = snakeRepo.findById(id);
-		if(optionalSnake.isPresent()) {
+		if (optionalSnake.isPresent()) {
 			return optionalSnake.get();
-		}
-		else {
+		} else {
 			return null;
 		}
 	}
