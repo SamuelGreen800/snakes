@@ -90,28 +90,28 @@ defer></script>
 								<form:input class="input col-7" path="price" value="${snake.price }"/>
 				           </div>
 				        
-				        <div class="form-group d-flex fw-bold justify-content-between my-5">
+				        <div class="form-group d-flex fw-bold justify-content-between mt-5">
 				       			<form:label path="description">Description:</form:label>
 				            	<form:errors path="description" class="text-danger"/>
 								<form:textarea rows="4"  class="input col-7" path="description" value="${snake.description }"/>
 				           </div>
 				        	
-				        	<div class="form-group d-flex fw-bold justify-content-between my-5">
+				        	<div class="">
 				        	
-								<form:input type="hidden" class="input col-7" value="${snake.photos }" path="photos"/>
+								<form:input type="hidden" class="col-7" value="${snake.photos }" path="photos"/>
 				           </div>
 				        	 
 				        	 
-				        	 <input type="file" name="image" value="${snake.photos}"></input> 
+				        	 <input type="file" class="my-4" name="image" value="${snake.photos}"></input> 
 				       
-				        	<div class="form-group d-flex fw-bold justify-content-center">
-				        		<input class="btn btn-success" type="submit" value="Update"/>
+				        	<div class="form-group d-flex fw-bold justify-content-between">
+				        		<input class="btn btn-success mt-4 mb-2" type="submit" value="Update"/>
+			<h2 class="text-center"><a href="/admin" class="btn mt-4 btn-primary">Dashboard</a></h2>
+			<h2 class="text-center"><a href="/admin/delete/${snake.id }" class="btn mt-4 btn-danger">Delete</a></h2>
 				       		</div>
 				    
 			
 			</form:form>
-			<h2 class="text-center"><a href="/admin" class="btn mt-4 btn-primary">Dashboard</a></h2>
-			<h2 class="text-center"><a href="/admin/delete/${snake.id }" class="btn mt-4 btn-danger">Delete</a></h2>
 		</div>
 	</div>
 	</section>

@@ -107,13 +107,14 @@ defer></script>
 				        	
 				        	
 				       
-				        	<div class="form-group d-flex fw-bold justify-content-center">
-				        		<input class="btn btn-success" type="submit" value="Submit"/>
+				        	<div class="form-group d-flex mt-2 fw-bold justify-content-between">
+				        		<input class="btn btn-success my-4" type="submit" value="Submit"/>
+			<h2 class="text-center"><a href="/admin" class="btn mt-4 btn-primary">Dashboard</a></h2>
 				       		</div>
+				        		
 				    
 			
 			</form:form>
-			<h2 class="text-center"><a href="/admin" class="btn mt-4 btn-primary">Dashboard</a></h2>
 		</div>
 	</div>
 	</section>
