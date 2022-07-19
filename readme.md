@@ -3,6 +3,6 @@ It also features a working contact form, which will currently email back the "yo
 This site was written in Java, under the Spring Boot framework, and using JSP and Bootstrap for the front end. 
 
 
-![Contacts](screenshots\screenContact.png?raw=true "Optional Title")
-![Dashboard](screenshots\screenDash.png?raw=true "Optional Title")
-![Sales](screenshots\screenSales.png?raw=true "Optional Title")
+![Sales](https://github.com/SamuelGreen800/snakes/blob/master/screenshots/ScreenSales.png?raw=true "Optional Title")
+![Dashboard](https://github.com/SamuelGreen800/snakes/blob/master/screenshots/screenDash.pngraw=true "Optional Title")
+![Contact](https://github.com/SamuelGreen800/snakes/blob/master/screenshots/screenContact.png?raw=true "Optional Title")
