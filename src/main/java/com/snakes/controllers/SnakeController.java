@@ -101,7 +101,7 @@ public class SnakeController {
 		else {
 			snakeService.addSnake(newSnake);
 			String fileName = StringUtils.cleanPath(multipartFile.getOriginalFilename());
-			String uploadDir = "snake-photos" + newSnake.getId();
+			String uploadDir = "snake-photos/" + newSnake.getId();
 
 			newSnake.setPhotos(fileName);
 			snakeService.updateSnake(newSnake);
@@ -176,7 +176,7 @@ public class SnakeController {
 			return "editSnake.jsp";
 		} else {
 			String fileName = StringUtils.cleanPath(multipartFile.getOriginalFilename());
-			String uploadDir = "snake-photos" + snake.getId();
+			String uploadDir = "snake-photos/" + snake.getId();
 
 			snake.setPhotos(fileName);
 			snakeService.updateSnake(snake);
