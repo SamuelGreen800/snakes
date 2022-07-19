@@ -112,7 +112,7 @@
 				</p>
 
 			</div>
-			<div class="d-flex container mt-5 mb-1 justify-content-between">
+			<div class="d-flex container mt-5 mb-3 justify-content-between">
 				<a class="btn btn-primary" href="/admin">Dashboard</a> <a
 					class="btn btn-warning" href="/admin/${oneSnake.id}">Edit Snake</a>
 			</div>

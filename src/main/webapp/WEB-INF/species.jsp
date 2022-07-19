@@ -101,7 +101,8 @@
 
 	</section>
 	<div class="container content">
-		<h1>This is the speciesss page</h1>
+		<h1>Species</h1>
+		<h4>This will eventually be split into multiple sections. In the meantime:</h4>
 		<p>Here, you'll learn the differences between boas and pythons!</p>
 
 		<img class="my-3" src="/img/maxresdefault.jpg" style="width: 50rem;"
